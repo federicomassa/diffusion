@@ -1,0 +1,12 @@
+# Project aliases
+
+# Format Python code with black and isort
+alias lint='./lint.sh'
+
+# Activate virtual environment
+alias activate='source .venv-py312/bin/activate'
+
+# Print available aliases
+alias aliases='cat .aliases'
+
+echo "Project aliases loaded. Run 'aliases' to see all available commands." 

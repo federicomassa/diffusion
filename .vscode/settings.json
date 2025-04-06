@@ -1,0 +1,13 @@
+{
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+    "python.linting.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true
+    }
+} 

@@ -53,8 +53,6 @@ print(f"Is CUDA available: {tf.test.is_built_with_cuda()}")
 print("\nRunning a simple test on available device:")
 import time
 
-import numpy as np
-
 # Create large matrices
 matrix_size = 5000
 A = tf.random.normal((matrix_size, matrix_size))

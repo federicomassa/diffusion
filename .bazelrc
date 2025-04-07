@@ -1,0 +1,17 @@
+build --enable_platform_specific_config
+
+# Python settings
+build --incompatible_default_to_explicit_init_py
+build --copt=-fdiagnostics-color=always
+build --host_copt=-fdiagnostics-color=always
+
+# Use --config=debug to compile with debug symbols
+build:debug -c dbg
+
+# Tensorflow settings
+build --action_env=PYTHON_BIN_PATH="python3"
+build --action_env=PYTHON_LIB_PATH="python3 -c 'import site; print(site.getsitepackages()[0])'"
+
+# Use Python 3.12 by default
+build --repo_env=PYTHON_BIN_PATH=python3.12
+build --python_version=PY3 

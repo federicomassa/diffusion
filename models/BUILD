@@ -6,8 +6,18 @@ py_library(
     name = "models",
     srcs = ["__init__.py"],
     deps = [
-        "@pip_deps//:tensorflow",
-        "@pip_deps//:keras",
-        "@pip_deps//:numpy",
+        "@diffusion_pip_deps//tensorflow",
+        "@diffusion_pip_deps//keras",
+        "@diffusion_pip_deps//numpy",
+    ],
+)
+
+py_library(
+    name = "diffusion",
+    srcs = ["diffusion.py"],
+    deps = [
+        ":models",
+        "@diffusion_pip_deps//tensorflow",
+        "@diffusion_pip_deps//numpy",
     ],
 ) 

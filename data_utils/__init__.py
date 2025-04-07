@@ -1,1 +1,1 @@
-"""Data generation utilities for diffusion models.""" 
+"""Data generation utilities for diffusion models."""

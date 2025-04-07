@@ -1,1 +1,1 @@
-"""Training scripts for diffusion models.""" 
+"""Training scripts for diffusion models."""
